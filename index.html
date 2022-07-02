@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>FAKE COFFEE SIGN-UP</title>
+</head>
+<body>
+    <div class="container">
+        <div class="hero-container">
+            <div class="hero-image">
+                <div class="logo-box">
+                    <hr>
+                    <h1>The Barista <br> Coffee Roasters</h1>
+                    
+                    <hr>
+                </div>
+                <div class="credits">
+                    Photo by <a href="https://unsplash.com/@nate_dumlao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nathan Dumlao</a> on <a href="https://unsplash.com/s/photos/coffee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                </div>
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="text-container">
+                <div class="text">
+                    <p>This is not a real online service! You know you need something like
+                        this in your life to help you realize your deepest dreams. <br>
+                            Sign up <em>now</em>
+                            to get started.
+                        </br>
+                    </p>
+                    <p>You <em>know</em> you want to.</p>
+                </div>
+            </div>
+            <div class="form-container">
+                <form action="#" method="post">
+                    <p>Let's do this!</p>
+
+                    <div class="form-line">
+                        <div class="form-div">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName">
+                        </div>
+                        <div class="form-div">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName">
+                        </div>
+                    </div>
+
+                    <div class="form-line">
+                        <div class="form-div">
+                            <label for="email">email</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div class="form-div">
+                            <label for="phone">phone number</label>
+                            <input type="tel" id="phone">
+                        </div>
+                    </div>
+
+                    <div class="form-line">
+                        <div class="form-div">
+                            <label for="pwd">password</label>
+                            <input type="password" id="pwd" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                        </div>
+                        <div class="form-div">
+                            <label for="pwd-confirm">confirm password</label>
+                            <input type="password" id="pwd-confirm" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <button>Create Account</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
