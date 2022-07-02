@@ -1,0 +1,167 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Norwester', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 25vw;
+}
+
+hr {
+    width: 18vw;
+    border: 0.4vh solid white;
+    border-radius: 5px;
+}
+
+a {
+    color: white;
+}
+
+p {
+    color: black;
+    margin: 0;
+    width: 47vw;
+    padding-top: 1em;
+}
+
+form {
+    margin: 2em;
+}
+
+form > p {
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+
+label {
+    text-transform: uppercase;
+    font-size: 0.75em;
+    letter-spacing: 0.2em;
+    margin: 0.2em;
+    color: rgb(99, 99, 99);
+    font-weight: 600;
+}
+
+input {
+    border: 1px solid rgb(193, 192, 192);
+    border-radius: 5px;
+    height: 2em;
+    font-size: 1em;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: auto;
+}
+
+.hero-container {
+    width: 33vw;
+    height: 100vh;
+    background: no-repeat url('/assets/img/nathan-dumlao-zUNs99PGDg0-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    position: relative;
+}
+
+.content-container {
+    background-color: rgb(251, 247, 243);
+}
+
+.hero-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    width: 33vw;
+    margin-top: 20vh;
+    background: rgba(0,0,0,0.6);
+}
+
+.credits {
+    padding: 1em;
+    font-weight: 400;
+    font-size: 0.75em;
+    position: absolute;
+    bottom: 0;
+    align-self: center;
+}
+
+.text-container {
+    height: 31vh;
+    width: 100vw;
+    font-size: 1.5em;
+    font-weight: 500;
+    padding-left: 1em;
+}
+
+.text {
+    position: absolute;
+    top: 10vh;
+}
+
+.form-container {
+    background-color: white;
+    box-shadow: rgba(0,0,0,0.1) 2px 2px 5px;
+    height: 40vh;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    margin: 1em 1em 1em 1em;
+}
+
+.form-line {
+    display: flex;
+    gap: 4em;
+}
+
+@font-face {
+    font-family: 'Norwester';
+    src: url(/assets/fonts/norwester.otf);
+}
+
+button {
+    height: 5vh;
+    width: 12vw;
+    background-color: rgb(120, 165, 120);
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    font-weight: 700;
+    border: none;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    position: absolute;
+    top: 78vh;
+}
+
+button:hover {
+    background-color: rgb(135, 181, 135);
+    cursor: pointer;
+}
+
+button:active {
+    transform: translate(2px, 4px);
+    background-color: rgb(138, 84, 48);
+}
