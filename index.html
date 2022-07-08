@@ -5,17 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>FAKE COFFEE SIGN-UP</title>
+    <script src="app.js"></script>
+    <title>Brothers Coffee</title>
 </head>
 <body>
     <div class="container">
         <div class="hero-container">
             <div class="hero-image">
                 <div class="logo-box">
-                    <hr>
-                    <h1>The Barista <br> Coffee Roasters</h1>
-                    
-                    <hr>
+                    <h1>Brothers<br>Coffee</h1>              
                 </div>
                 <div class="credits">
                     Photo by <a href="https://unsplash.com/@nate_dumlao?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nathan Dumlao</a> on <a href="https://unsplash.com/s/photos/coffee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
@@ -24,58 +22,59 @@
         </div>
         <div class="content-container">
             <div class="text-container">
-                <div class="text">
-                    <p>This is not a real online service! You know you need something like
-                        this in your life to help you realize your deepest dreams. <br>
+                <div class="shift">
+                    <span>Want to know the weekly goings on and specials at your favorite coffee place?
+                        <br>
                             Sign up <em>now</em>
                             to get started.
                         </br>
-                    </p>
-                    <p>You <em>know</em> you want to.</p>
+                    </span>
+                    <span class="span-space">You <em>know</em> you want to.</span>
                 </div>
             </div>
             <div class="form-container">
-                <form action="#" method="post">
-                    <p>Let's do this!</p>
+                <span class="span-space">Let's do this!</span>
 
-                    <div class="form-line">
-                        <div class="form-div">
-                            <label for="firstName">First Name</label>
-                            <input type="text" id="firstName">
-                        </div>
-                        <div class="form-div">
-                            <label for="lastName">Last Name</label>
-                            <input type="text" id="lastName">
-                        </div>
-                    </div>
+                <form name="myForm" action="#" method="post">
 
-                    <div class="form-line">
-                        <div class="form-div">
-                            <label for="email">email</label>
-                            <input type="email" id="email">
-                        </div>
-                        <div class="form-div">
-                            <label for="phone">phone number</label>
-                            <input type="tel" id="phone">
-                        </div>
+                <div class="form-line">
+                    <div class="form-div fn-div">
+                        <label for="firstName">First Name<sup>*</sup></label>
+                        <input type="text" id="firstName" name="firstName" placeholder="Coffee" required>
                     </div>
-
-                    <div class="form-line">
-                        <div class="form-div">
-                            <label for="pwd">password</label>
-                            <input type="password" id="pwd" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
-                        </div>
-                        <div class="form-div">
-                            <label for="pwd-confirm">confirm password</label>
-                            <input type="password" id="pwd-confirm" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$">
-                        </div>
+                    <div class="form-div ln-div">
+                        <label for="lastName">Last Name<sup>*</sup></label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Drinker" required>
                     </div>
-                    <div class="btn">
-                        <button>Create Account</button>
+                </div>
+                <div class="form-line">
+                    <div class="form-div email-div">
+                        <label for="email">email<sup>*</sup></label>
+                        <input type="email" id="email" name="email" placeholder="drinkscoffee@beans.com" required>
                     </div>
-
+                    <div class="form-div">
+                        <label for="phone">phone number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="555-555-5555">
+                    </div>
+                </div>
+                <div class="form-line">
+                    <div class="form-div pwd-div">
+                        <label for="pwd">password<sup>*</sup></label>
+                        <input type="password" id="pwd" name="pwd" required>
+                    </div>
+                    <div class="form-div pwdConf-div">
+                        <label for="pwd-confirm">confirm password<sup>*</sup></label>
+                        <input type="password" id="pwd-confirm" name="pwd-confirm" required>
+                    </div>
+                </div>
+                    
                 </form>
             </div>
+            <div class="sign-in">
+                <button type="submit" onclick="return validateForm()">Create Account</button>
+                <span class="account">Already have an account? <a href="#">Sign in.</a></span>
+            </div>
+
         </div>
     </div>
 </body>

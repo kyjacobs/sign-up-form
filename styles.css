@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -8,8 +10,8 @@ body {
 h1 {
     margin: 0;
     font-family: 'Norwester', sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
+    font-size: 4.5vw;
+    text-align: center; 
     width: 25vw;
 }
 
@@ -19,14 +21,22 @@ hr {
     border-radius: 5px;
 }
 
-a {
+.credits > a {
     color: white;
 }
 
-p {
-    color: black;
-    margin: 0;
+span {
+    color: rgb(63, 92, 63);
     width: 47vw;
+    font-size: max(16px, 1.75vw, 1.75vh);
+    margin-left: 1.25em;
+    display: block;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: .05em;
+    line-height: 1.2em;
+}
+
+.span-space {
     padding-top: 1em;
 }
 
@@ -34,15 +44,16 @@ form {
     margin: 2em;
 }
 
-form > p {
-    font-size: 1.5em;
-    font-weight: 500;
+a {
+    text-decoration: none;
+    color:rgb(83, 136, 83);
+    font-weight: 700;
 }
 
 input:invalid {
     border: 1px solid red;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 }
-
 
 label {
     text-transform: uppercase;
@@ -58,6 +69,16 @@ input {
     border-radius: 5px;
     height: 2em;
     font-size: 1em;
+}
+
+input:focus {
+    border: 1px solid blue;
+    outline: none;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+::placeholder {
+    font-style: italic;
 }
 
 .container {
@@ -78,6 +99,7 @@ input {
 
 .content-container {
     background-color: rgb(251, 247, 243);
+    width: 67vw;
 }
 
 .hero-image {
@@ -91,9 +113,9 @@ input {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 15vh;
+    height: 20vh;
     width: 33vw;
-    margin-top: 20vh;
+    margin-top: 15vh;
     background: rgba(0,0,0,0.6);
 }
 
@@ -106,35 +128,49 @@ input {
     align-self: center;
 }
 
-.text-container {
-    height: 31vh;
-    width: 100vw;
-    font-size: 1.5em;
-    font-weight: 500;
-    padding-left: 1em;
+.shift {
+    padding-top: 10vh;
 }
 
-.text {
-    position: absolute;
-    top: 10vh;
+.account {
+    font-size: 1em;
+    margin-left: 0;
+}
+
+.text-container {
+    height: 35vh;
+    font-size: 1.75vw;
+    font-weight: 500;
+}
+
+.form-container > p {
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .form-container {
     background-color: white;
     box-shadow: rgba(0,0,0,0.1) 2px 2px 5px;
-    height: 40vh;
+    min-height: 45vh;
 }
 
 .form-div {
     display: flex;
     flex-direction: column;
     width: 20vw;
-    margin: 1em 1em 1em 1em;
 }
 
 .form-line {
     display: flex;
     gap: 4em;
+    margin-bottom: 2em;
+}
+
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1em 1em 2em;
+    gap: 1.5em;
 }
 
 @font-face {
@@ -144,16 +180,14 @@ input {
 
 button {
     height: 5vh;
-    width: 12vw;
+    width: max(150px,12vw);
     background-color: rgb(120, 165, 120);
     border-radius: 5px;
     color: white;
     font-size: 1em;
     font-weight: 700;
     border: none;
-    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
-    position: absolute;
-    top: 78vh;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
 }
 
 button:hover {
@@ -164,4 +198,12 @@ button:hover {
 button:active {
     transform: translate(2px, 4px);
     background-color: rgb(138, 84, 48);
+}
+
+.invalid {
+    color: red;
+    font-size: 0.75em;
+    margin: 0;
+    margin-bottom: -1em;
+    padding: 0.5em 0 0 0.5em;
 }
