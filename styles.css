@@ -50,7 +50,7 @@ a {
     font-weight: 700;
 }
 
-input:invalid {
+.invalidInput {
     border: 1px solid red;
     box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 }

@@ -35,6 +35,7 @@ function nonEmptyCheck(formArr, divArr) {
         else if (formArr[i] === "") {
             const div = document.querySelector(divArr[i]);
             div.classList.add('flagged');
+            div.querySelector('input').classList.add('invalidInput');
             const span = document.createElement("span"); 
             span.classList.add('invalid');
             span.textContent = error[i];
@@ -46,6 +47,7 @@ function nonEmptyCheck(formArr, divArr) {
             if (div.classList.contains('flagged')) {
                 div.removeChild(div.lastChild);
                 div.classList.remove('flagged');
+                div.querySelector('input').classList.remove('invalidInput');
             }
         }
     }
@@ -62,11 +64,13 @@ function passwordCheck(pwd, pwdConf) {
         span.textContent = error[5];
         div.classList.add('flagged-pw');
         div.appendChild(span);
+        div.querySelector('input').classList.add('invalidInput');
     }
     else {
         if(div.classList.contains('flagged-pw')) {
             div.removeChild(div.lastChild);
             div.classList.remove('flagged-pw');
+            div.querySelector('input').classList.remove('invalidInput');
         }
     }
 }
@@ -76,18 +80,19 @@ function validEmail(em) {
     const div = document.querySelector(".email-div");
     let re = /\S+@\S+\.\S+/;
 
-
-    if (re.test(em) === false && em !== "") {
+    if (re.test(em) === false && em !== "" && !div.classList.contains('flagged-em')) {
         const span = document. createElement("span");
+        div.querySelector('input').classList.add('invalidInput');
         span.classList.add('invalid');
         span.textContent = "Please enter valid e-mail address.";
         div.classList.add('flagged-em');
         div.appendChild(span);
-    } 
+    }
     else {
-        if(div.classList.contains('flagged-em')) {
+        if(re.test(em) === true && div.classList.contains('flagged-em')) {
             div.removeChild(div.lastChild);
             div.classList.remove('flagged-em');
+            div.querySelector('input').classList.remove('invalidInput');
         }
     }
 }
