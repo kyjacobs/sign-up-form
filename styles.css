@@ -90,7 +90,7 @@ input:focus {
 .hero-container {
     width: 33vw;
     height: 100vh;
-    background: no-repeat url('/assets/img/nathan-dumlao-zUNs99PGDg0-unsplash.jpg');
+    background: no-repeat url('./assets/img/nathan-dumlao-zUNs99PGDg0-unsplash.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -175,7 +175,7 @@ input:focus {
 
 @font-face {
     font-family: 'Norwester';
-    src: url(/assets/fonts/norwester.otf);
+    src: url(./assets/fonts/norwester.otf);
 }
 
 button {
