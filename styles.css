@@ -151,7 +151,7 @@ input:focus {
 .form-container {
     background-color: white;
     box-shadow: rgba(0,0,0,0.1) 2px 2px 5px;
-    min-height: 45vh;
+    /*height: 40vh;*/
     margin-bottom: 2em;
     padding: 1em 1em 1em 0;
 }
@@ -172,7 +172,7 @@ input:focus {
     display: flex;
     flex-direction: column;
     margin: 0 1em 1em 2em;
-    gap: .5em;
+    gap: 1em;
 }
 
 @font-face {
